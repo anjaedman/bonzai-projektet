@@ -1,0 +1,52 @@
+.wrapper-body {
+    display: grid;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-image: url(assets/photos/bakgrund.jpg);
+
+}
+
+.loga-hem {
+    max-height: fit-content;
+}
+.drop-menu {
+    justify-items: flex-end;
+}
+.drop-menu-hoover {
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: chartreuse;
+    max-height: 600px;
+    width: 100%;
+}
+.button .wrapper-main {
+    background-color: coral;
+}
+
+.wrapper-main {
+
+}
+.wrapper-main-index {
+
+}
+
+.wrapper-main-about-us {
+
+}
+
+.wrapper-main-book-cottage {
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    flex-direction: row;
+    background-color: cornflowerblue;
+}
