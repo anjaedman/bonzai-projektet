@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #856E5E; 
     margin: 0;
     padding: 0;
@@ -19,16 +19,12 @@ body {
 p  { 
     font-size: 16px;
     font-weight: 700;
-   
-   
-   
-    
 }
 h1 {
     padding: 15px;
 }
 /* .wrapper-body {  
-    
+    background-image: url("/assets/photos/bakgrund.jpg");  
 } */
 
 
@@ -39,9 +35,6 @@ h1 {
     flex-direction: row;
     height: 30px;
     justify-content: space-between;
-   
-   
-   
     
 }
 
@@ -60,10 +53,8 @@ h1 {
     font-weight: 550;
     background-color: transparent;
     border: 0px;
-  
-
-
 }
+
 .button-header-2 {
     grid-area: button-header;
     font-size: 16px;
@@ -83,7 +74,8 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 1rem;
+    margin-bottom: 30px;
 
 }  
  .button-index {
@@ -98,7 +90,16 @@ h1 {
     padding-bottom: 45px;
 }
 
+/* .wrapper-body-bakgrund {
+
+} */
+
 .wrapper-main-about-us {
+   
+    display: flex;
+    flex-direction: column;
+    background-color: #3698a9;
+
     /* display: grid;
     grid-template-rows: (2, 1fr);
     grid-template-areas: 
@@ -106,41 +107,77 @@ h1 {
     "bild-list"
     ;
     background-position: 60%; */
-
 }
 
-.wrapper-main-about-us p {
-    justify-content: center;
+.about-us-information {
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
 
-}
-.wrapper-main-about-us h1 {
-    
-}
 
 .bild-list {
-    grid-area: bild-list;
+    /* grid-area: bild-list; */
+    /* flex-direction: column; */
+    /* height: 0px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    background-color: #cfc13c;
+    height: 200px;
+    width: 100%;
+}
+
+.bild-list img {
+    width: 100%;
+}
+
+.list {
     display: flex;
     flex-direction: column;
-    height: 0px;
-    
+    justify-content: space-between;
+    background-color: #856E5E;
+    border: 6px;
+    border-color: #392f29;
 }
+
+.list-1 {
+   
+
+    
+
+}
+.list-2 {
+
+}
+
+.list-3 {
+
+}
+
 
 .wrapper-main-book-cottage {
     display: flex;
     flex-direction: row;
-
-
 }
-.footer {
 
-   display: flex;
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    justify-content: space-between;
+    background-color: #856E5E; 
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #856E5E; 
-    justify-content: space-between;
-   
 }
 
 .kontakt {
@@ -148,7 +185,7 @@ h1 {
     
 }
 .företagsnamn {
-   font-size: 2rem;
+   font-size: 1.5rem;
    font-weight: 700;
 
 }
