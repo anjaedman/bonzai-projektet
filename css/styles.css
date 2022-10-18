@@ -18,7 +18,8 @@ body {
 
 p  { 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
+   
    
    
     
@@ -44,9 +45,9 @@ h1 {
     
 }
 
-.loga-hem {
+/* .loga-hem {
 
-}
+} */
 
 /* .drop-menu-hoover {
     grid-area: drop-meny-hoover;
@@ -55,100 +56,104 @@ h1 {
 
 .button-header-1 {
     grid-area: button-header;
-    /* grid-column: 6/7; */
     font-size: 16px;
     font-weight: 550;
     background-color: transparent;
     border: 0px;
-    /* justify-self: center; */
-    /* justify-content: center; */
-    /* justify-items: center; */
+  
 
 
 }
 .button-header-2 {
-    /* grid-column: 7/8; */
     grid-area: button-header;
     font-size: 16px;
     font-weight: 550;
     background-color: transparent;
     border: 0px;
-    /* justify-self: center; */
-    /* justify-content: center; */
-    /* justify-items: center; */
+  
 
 }
-.drop-menu {
+/* .drop-menu {
     grid-area: drop-meny;
-    /* grid-column: 9/10; */
-    /* justify-self: flex-end; */
-    /* justify-items: flex-end; */
-    /* align-self: flex-end; */
-    /* justify-content: flex-end; */
 
-}
-
+} */
 
 
 .wrapper-main {
     display: flex;
     justify-content: center;
     text-align: center;
- 
-    padding-top: 40px;
     padding-bottom: 30px;
+
 }  
-.button-index {
-    font-size: 18px;
-    font-weight: 550;
-    border-radius: 0.5rem;
+ .button-index {
     background-color: transparent;
-    padding: 8px;
-    
-}
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+ }
 
 .wrapper-main-text {
     padding-bottom: 45px;
 }
-.wrapper-main-index {
-    
-
-}
 
 .wrapper-main-about-us {
-    background-position: 60%;
+    /* display: grid;
+    grid-template-rows: (2, 1fr);
+    grid-template-areas: 
+    "ext-main-about-us"
+    "bild-list"
+    ;
+    background-position: 60%; */
 
 }
 
-/* .wrapper-main-book-cottage {
-    background-position: 40%; 
+.wrapper-main-about-us p {
+    justify-content: center;
 
-}  */
+}
+.wrapper-main-about-us h1 {
+    
+}
 
+.bild-list {
+    grid-area: bild-list;
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    
+}
+
+.wrapper-main-book-cottage {
+    display: flex;
+    flex-direction: row;
+
+
+}
 .footer {
-    display: grid;
-    grid-template-columns: (7, 1fr);
-    /* grid-template-rows: auto; */
-    grid-template-areas: 
-    "kontakt . . . . . adress";
-    padding-bottom: 10px;
+
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: none;
-   
-  
+    background-color: #856E5E; 
+    justify-content: space-between;
    
 }
 
 .kontakt {
-    grid-area: kontakt;
-    justify-items: flex-start;
-    
-    
+    font-weight: 700;  
     
 }
+.företagsnamn {
+   font-size: 2rem;
+   font-weight: 700;
+
+}
 .adress {
-    grid-area: adress;
-    justify-self: flex-end;
-    /* justify-items: baseline; */
+  
+    font-weight: 700;
+    
 }
