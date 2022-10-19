@@ -34,29 +34,7 @@ h1 {
     height: 100vh;
 }
 
-.wrapper-body-about-us {
-    background-image: url("../assets/photos/bakgrund.jpg");
-    height: fit-content; 
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    width: 100%;
-    height: 100vh;
 
-}
-
-.wrapper-body-book-cottage {
-    background-image: url("../assets/photos/bakgrund.jpg");
-    height: fit-content; 
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    width: 100%;
-    height: 100vh;
-
-}
 .header {
     display: flex;
     padding: 20px;
@@ -66,15 +44,6 @@ h1 {
     justify-content: space-between;
     
 }
-
-/* .loga-hem {
-
-} */
-
-/* .drop-menu-hoover {
-    grid-area: drop-meny-hoover;
-    
-} */
 
 .button-header {
     background-color:transparent;
@@ -94,11 +63,6 @@ h1 {
 }
 
 
-/* .drop-menu {
-    grid-area: drop-meny;
-
-} */
-
 
 .wrapper-main {
     display: flex;
@@ -106,28 +70,26 @@ h1 {
     text-align: center;
     padding: 1rem;
     margin-bottom: 30px;
-    /* background-color: transparent; */
-
-}  
+  
+} 
+ 
 .button-index {
     background-color:transparent;
     overflow: hidden;
+   
+   
     
 }
 .button-index a {
-    float: none;
+    display: inline-block;
+    box-shadow: 4px;
     color: #040404;
     text-align: center;
     padding: 14px 25px;
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
-    border-style: solid;
-   border-color: #392f29;
-   
-   /* border-bottom: #392f29;
-   border-top: #392f29; */
-    /* border: 3px  solid #392f29 ; */
+    border: 3px  solid #392f29 ;
    
 }
 
@@ -135,26 +97,16 @@ h1 {
     padding-bottom: 45px;
 }
 
-/* .wrapper-body-bakgrund {
-
-} */
-
-/* .wrapper-main-about-us {
-   
-    display: flex;
-    flex-direction: column;
+.wrapper-body-about-us {
+    background-image: url("../assets/photos/bakgrund.jpg");
+    height: fit-content; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    width: 100%;
     
-    justify-content: center; */
-    /* background-color: #3698a9; */
-
-    /* display: grid;
-    grid-template-rows: (2, 1fr);
-    grid-template-areas: 
-    "ext-main-about-us"
-    "bild-list"
-    ;
-    background-position: 60%;
-} */
+}
 
 .about-us-information {
     font-size: 20px;
@@ -190,6 +142,7 @@ position: absolute;
  opacity: 0;
 transition: .5s linear;
 }
+
 .bild-list:hover .overlay  {
     opacity: 1; 
     display: grid;
@@ -200,37 +153,56 @@ transition: .5s linear;
       }
 
 
-.list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #856E5E;
-    border: 6px;
-    border-color: #392f29;
-}
-
-.list-1 {
+.wrapper-body-book-cottage {
+    /* display: flex; */
+    background-image: url("../assets/photos/bakgrund.jpg");
+    height: fit-content; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    background-color: chartreuse;
    
-
-    
-
 }
-.list-2 {
-
-}
-
-.list-3 {
-
-}
-
 
 .wrapper-main-book-cottage {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
 }
-/* .footer-index {
-    background-color: transparent;
-} */
+
+.list-book-cottage {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     width: 100%;
+    height: 100vh;
+    gap: 0.5rem; 
+    background-color: #856E5E;
+    height: auto;
+    
+
+}
+
+.list-1{
+  
+ 
+
+}
+
+.list-2 {
+
+
+}
+.list-3
+
+ {
+
+ }
+
+
+
 .footer {
     display: flex;
     flex-direction: column;
