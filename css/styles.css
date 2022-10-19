@@ -1,19 +1,19 @@
 body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
     background-color: #856E5E; 
     margin: 0;
     padding: 0;
     font-style: garamond;
-    background-image: url("/assets/photos/bakgrund.jpg");
-    height: fit-content; 
-    background-position: center;
+    /* background-image: url("/assets/photos/bakgrund.jpg"); */
+    /* height: fit-content;  */
+    /* background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100vh; */
 }
 
 p  { 
@@ -23,15 +23,44 @@ p  {
 h1 {
     padding: 15px;
 }
-/* .wrapper-body {  
-    background-image: url("/assets/photos/bakgrund.jpg");  
-} */
+.wrapper-body {  
+    background-image: url("../assets/photos/bakgrund.jpg");
+    height: fit-content; 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 
+.wrapper-body-about-us {
+    background-image: url("../assets/photos/bakgrund.jpg");
+    height: fit-content; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    width: 100%;
+    height: 100vh;
 
+}
+
+.wrapper-body-book-cottage {
+    background-image: url("../assets/photos/bakgrund.jpg");
+    height: fit-content; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    width: 100%;
+    height: 100vh;
+
+}
 .header {
     display: flex;
     padding: 20px;
-    background-color: none;
+    /* background-color: transparent; */
     flex-direction: row;
     height: 30px;
     justify-content: space-between;
@@ -47,23 +76,24 @@ h1 {
     
 } */
 
-.button-header-1 {
-    grid-area: button-header;
-    font-size: 16px;
-    font-weight: 550;
-    background-color: transparent;
-    border: 0px;
-}
-
-.button-header-2 {
-    grid-area: button-header;
-    font-size: 16px;
-    font-weight: 550;
-    background-color: transparent;
-    border: 0px;
+.button-header {
+    background-color:transparent;
+    overflow: hidden;
+    
   
-
 }
+.button-header a {
+    float: left;
+    color: #040404;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+
+
 /* .drop-menu {
     grid-area: drop-meny;
 
@@ -76,15 +106,30 @@ h1 {
     text-align: center;
     padding: 1rem;
     margin-bottom: 30px;
+    /* background-color: transparent; */
 
 }  
- .button-index {
-    background-color: transparent;
-    padding: 5px;
-    font-size: 20px;
+.button-index {
+    background-color:transparent;
+    overflow: hidden;
+    
+}
+.button-index a {
+    float: none;
+    color: #040404;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 24px;
     font-weight: 700;
-    border-radius: 10px;
- }
+    border-style: solid;
+   border-color: #392f29;
+   
+   /* border-bottom: #392f29;
+   border-top: #392f29; */
+    /* border: 3px  solid #392f29 ; */
+   
+}
 
 .wrapper-main-text {
     padding-bottom: 45px;
@@ -94,11 +139,13 @@ h1 {
 
 } */
 
-.wrapper-main-about-us {
+/* .wrapper-main-about-us {
    
     display: flex;
     flex-direction: column;
-    background-color: #3698a9;
+    
+    justify-content: center; */
+    /* background-color: #3698a9; */
 
     /* display: grid;
     grid-template-rows: (2, 1fr);
@@ -106,13 +153,16 @@ h1 {
     "ext-main-about-us"
     "bild-list"
     ;
-    background-position: 60%; */
-}
+    background-position: 60%;
+} */
 
 .about-us-information {
+    font-size: 20px;
+    padding-top: 40px;
     display: flex;
     text-align: center;
-    align-self: center;
+    /* align-self: center; */
+    justify-content: center;
 }
 
 
@@ -122,15 +172,33 @@ h1 {
     /* height: 0px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
-    background-color: #cfc13c;
+    /* gap: 0.5rem; */
+    /* background-color: #cfc13c; */
     height: 200px;
     width: 100%;
+    height: 150px;
 }
 
 .bild-list img {
+    
     width: 100%;
+    height: 150px;
 }
+
+.overlay {
+position: absolute;
+ opacity: 0;
+transition: .5s linear;
+}
+.bild-list:hover .overlay  {
+    opacity: 1; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 200px;
+    width: 100%;
+    height: 150px;
+      }
+
 
 .list {
     display: flex;
@@ -160,7 +228,9 @@ h1 {
     display: flex;
     flex-direction: row;
 }
-
+/* .footer-index {
+    background-color: transparent;
+} */
 .footer {
     display: flex;
     flex-direction: column;
@@ -170,6 +240,7 @@ h1 {
     justify-content: space-between;
     background-color: #856E5E; 
     width: 100%;
+  
 }
 
 .footer-info {
