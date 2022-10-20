@@ -1,5 +1,5 @@
 body {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
     background-color: #856E5E; 
@@ -23,34 +23,52 @@ p  {
 h1 {
     padding: 15px;
 }
+
+
 .wrapper-body {  
+    display: flex;
+    flex-direction: column;
     background-image: url("../assets/photos/bakgrund.jpg");
-    height: fit-content; 
-    background-position: center;
-    background-attachment: fixed;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    justify-content: space-between;
+  
+}
+
+.image-adjustments-cottage {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/photos/bakgrund.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: space-between;
+    background-size: 100% 50%;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* 
+.poster {
     width: 100%;
     height: 100vh;
-}
+} */
 
-
-.header {
-    display: flex;
-    padding: 20px;
-    /* background-color: transparent; */
-    flex-direction: row;
-    height: 30px;
-    justify-content: space-between;
-    
-}
+/* .header {
+    width: 100%;
+} */
 
 .button-header {
     background-color:transparent;
     overflow: hidden;
-    
-  
 }
+
 .button-header a {
     float: left;
     color: #040404;
@@ -62,14 +80,13 @@ h1 {
    
 }
 
-
-
 .wrapper-main {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 1rem;
-    margin-bottom: 30px;
+    height: 300px;
+    background-color: transparent;
   
 } 
  
@@ -98,35 +115,19 @@ h1 {
     padding-bottom: 45px;
 }
 
-.wrapper-body-about-us {
-    background-image: url("../assets/photos/bakgrund.jpg");
-    height: fit-content; 
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    width: 100%;
-    
-}
 
 .about-us-information {
     font-size: 20px;
     padding-top: 40px;
     display: flex;
     text-align: center;
-    /* align-self: center; */
     justify-content: center;
 }
 
 
 .bild-list {
-    /* grid-area: bild-list; */
-    /* flex-direction: column; */
-    /* height: 0px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* gap: 0.5rem; */
-    /* background-color: #cfc13c; */
     height: 200px;
     width: 100%;
     height: 150px;
@@ -161,62 +162,55 @@ transition: .5s linear;
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 60%;
     width: 100%;
-    /* background-color: chartreuse; */
+   
    
 }
+
+.book-cottage-text {
+    text-align: center;
+   
+}
+
 
 .wrapper-main-book-cottage {
     display: flex;
     flex-direction: column;
     width: 100%;
+    /* font-size: 20px; */
+    /* font-weight: 700; */
     
 }
 
 .list-book-cottage {
-    display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas: 
-    ". . list-1 . list-2 . list-3 . ."
-    ; */
-     width: 100%;
-    /* height: 100vh; */
-    /* gap: 0.5rem;  */
-    background-color: #856E5E;
-    /* height: auto; */
-    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 700;
     
-
 }
 
-.list-1{
-    /* grid-area: list-1; */
-  
- 
-
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+   
 }
 
-.list-2 {
-/* grid-area: list-2; */
-
+.input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
-.list-3{
-/* grid-area: list-3; */
-
- }
-
-
 
 .footer {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    left:0;
     justify-content: space-between;
-    background-color: #856E5E; 
+    /* background-color: #725e50;  */
     width: 100%;
   
 }
@@ -239,7 +233,5 @@ transition: .5s linear;
 
 }
 .adress {
-  
     font-weight: 700;
-    
 }

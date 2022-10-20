@@ -4,101 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Cottage</title>
     <link rel="stylesheet" href="../css/styles.css">
     
 </head>
 <body>
 
-    <div class="wrapper-main">
-
-        <div class="wrapper-body-book-cottage">
+        <div class="image-adjustments-cottage">
         
             <div class="header">
                 <!-- conteiner 1 -->
-                <div class="loga-hem">
-                    <img src="../assets/logo/bonz.ai-logo-black-portrait-full.png" alt="loga" width="48">
+                <div class="navigation-menu">
+                    <div class="loga-hem">
+                        <img src="../assets/logo/bonz.ai-logo-black-portrait-full.png" alt="loga" width="48">
+                    </div>
+                    <!-- container 2 -->
+                    <div>
+                        <nav class="button-header">
+                            <a href="../index.html">Hem</a>
+                            <a href="../pages/about-us.html">Om Bonzai</a>
+                            <a href="../pages/book-cottage.html">Boka</a>
+                        </nav>
+                        <!-- <button class="button-header-1">Om Bonzai</button>
+                                    <button class="button-header-2">Boka stuga</button> -->
         
+                    </div>
+                    <!-- container 3 -->
+                    <div class="drop-menu">
+                        <img src="../assets/photos/navicon.svg" alt="hamburgare">
+                    </div>
                 </div>
-                <!-- container 2 -->
-                <div>
-                    <nav class="button-header">
-                        <a href="../index.html">Hem</a>
-                        <a href="about-us.html">Om Bonzai</a>
-                    </nav>
-                    
-                </div>
+        
                 
-                <!-- container 3 -->
-                <div class="drop-menu">
-                    <img src="../assets/photos/navicon.svg" alt="hamburgare">
-                </div>
-            
-            </div>
-
-        
-            <div class="wrapper-main-book-cottage">
-                <h1>
+                <h1 class="book-cottage-text">
                     Välkommen!
                 </h1>
-
-                <p>
+                
+                
+                <p class="book-cottage-text">
                     Här bokar du din vistelse hos Bonzai
                 </p>
-                <form>
-                    <div class="list-book-cottage"> 
+                
+            </div>
+        
+            <div class="wrapper-main">
+                <inp class="list-book-cottage">
 
-                        <div class="list-1">
-                            <label for="date-from">Incheckning</label>
-                            <input id="date-from" type="date" name="date-from" /> <br>
-                            <input value="Utcheckning"> <br>
-                            <input value="Stuga antal + pris"> <br>
-                            <input value="mat">  <br>
+                        <div class="list">
+
+                            <div class="input-container">
+                                <label for="date-from">Incheckning</label>
+                                <input id="date-from" type="date" name="date-from" />
+                            </div>
+
+                            <div class="input-container">
+                                <label for="date-from">Utcheckning</label>
+                                <input id="date-to" type="date" name="date-to">
+                            </div>
+                            <div class="input-container">
+                            <label for="stuga-antal-pris">Stuga antal+pris </label>
+                            <input id="stuga-antal-pris" type="number" name="stuga-antal-pris">
+                            </div>
+                            <div class="input-container"> 
+                            <label for="mat">Mat</label>
+                            <input id="mat" type="number" name="mat">
+                            </div>
                         </div>
     
-                        <div class="list-2">
-                            <label for="fname">Förnamn:</label> 
-                            <input value="Förnamn"> <br>
-                            <label for="fname">Efternamn:</label>
-                            <input value="Efternamn"> <br>
+                        <div class="list">
+                            <div class="input-container">
+                                <label for="fnamn">Förnamn</label>
+                                <input id="förnamn" type="fname" name="fname">
+                            </div>
+                            <div class="input-container">
+                                <label for="lname">Efternamn</label>
+                                <input id="efternamn" type="lname" name="lname">
+                            </div>
+                            <div class="input-container"> 
                              <label for="fname">Mail:</label>
-                            <input value="Mail"> <br>
+                            <input value="Mail">
+                            </div>
+                            <div class="input-container"> 
                             <label for="fname">Telefon:</label>
-                            <input value="Telefon"> <br>
+                            <input value="Telefon">
+                            </div>
                         </div>
 
-                        <div class="list-3">
-                            <input value="Till betalning">
+                        <div class="list">
+                            <br>
+                            <br><br><br>
+                            <div class="input-container">
+                            <input type="button" value="Till Betalning">
+                            </div>
                         </div>
-                    </div>
+
+                         
+                    
                 </form>
             </div>
-
-        </div>
-
-        <div class="footer">
-
-            <div class="footer-info">
-                <p class="kontakt"> Bonzai eco hotell <br>
-                    Mail: anjaedman@hotmail.com <br>
-                    Tele. 073-9376010 <br>
-                </p>
-    
-                <p class="företagsnamn">Bonzai.AI - AI driven eco hotel
-    
-                </p>
-    
-    
-                <p class="adress"> Adress: <br>
-                    Östra Trollgränd 9, 776 72 Långshyttan <br>
-                    Org. nummer. 12345678-9 <br>
-    
-                </p>
-            </div>
-        </div>
-        </div>
         
-    </div>
+            <div class="footer">
+                <div class="footer-info">
+                    <p class="kontakt"> Bonzai eco hotell <br>
+                        Mail: anjaedman@hotmail.com <br>
+                        Tele. 073-9376010 <br>
+                    </p>
+        
+                    <p class="företagsnamn">Bonzai.AI - AI driven eco hotel
+        
+                    </p>
+        
+                    <p class="adress"> Adress: <br>
+                        Östra Trollgränd 9, 776 72 Långshyttan <br>
+                        Org. nummer. 12345678-9 <br>
+        
+                    </p>
+                </div>
+            </div>
+        
+        </div>
    
 </body>
 </html>
