@@ -54,6 +54,11 @@ h1 {
     justify-content: space-between;
     padding: 20px;
 }
+
+/* .loga-hem {
+    overflow: hidden;
+
+} */
 /* 
 .poster {
     width: 100%;
@@ -99,7 +104,7 @@ h1 {
 }
 .button-index a {
     display: inline-block;
-    box-shadow: 4px;
+    box-shadow: 12px;
     color: #040404;
     text-align: center;
     padding: 14px 25px;
@@ -112,7 +117,7 @@ h1 {
 }
 
 .wrapper-main-text {
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 }
 
 
@@ -185,18 +190,25 @@ transition: .5s linear;
 .list-book-cottage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
+    width: auto;
     background-color: transparent;
     justify-content: space-around;
     font-size: 20px;
     font-weight: 700;
+    
+    
     
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    padding: 90px;
+    padding: 110px;
+    background-color: transparent;
+    
+    
+    
+   
    
 }
 
@@ -204,6 +216,15 @@ transition: .5s linear;
     display: flex;
     flex-direction: column;
     text-align: left;
+    
+
+    
+}
+.input-container input {
+    font-weight: 700;
+    background-color: #B49580
+    
+
 }
 
 .footer {
@@ -221,8 +242,16 @@ transition: .5s linear;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+   
 }
-
+.footer-info-about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #856E5E;
+}
 .kontakt {
     font-weight: 700;  
     
