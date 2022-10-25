@@ -1,6 +1,22 @@
 
-let test = 10
-console.log(" testa sträng", test);
+
+let one = 10
+let two = 'false'
+let three = '100'/10
+let four = 1 < 2
+let five;
+let six = 'Christoffer' - 1
+let seven = 'B' > 'A'
+
+console.log('one is type: ', typeof one)
+console.log('two is type: ', typeof two)
+console.log('three is type: ', typeof three)
+console.log('four is type: ', typeof four)
+console.log(typeof five)
+console.log('six is type: ', typeof six)
+console.log('six is type: ', six)
+console.log('seven is type: ', typeof seven)
+
 
 
 // let test = 1;
