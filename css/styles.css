@@ -159,6 +159,7 @@ transition: .5s linear;
     justify-content: space-around;
     font-size: 20px;
     font-weight: 700;
+    
 }
 
 .list {
@@ -167,7 +168,7 @@ transition: .5s linear;
     margin-top: 90px;
     background-color: transparent;
     padding-left: 90px;
-    padding-top: 20PX;
+    padding-top: 70PX;
     
 }
 
@@ -176,10 +177,14 @@ transition: .5s linear;
     flex-direction: column;
     text-align: left;
     
+    
+    
 }
 .input-container input {
     font-weight: 700;
     background-color: #B49580
+    
+    
 }
 
 .footer {
